@@ -37,3 +37,5 @@ export const SESSION_CHAT_URL = (id: string = INBOX_SESSION_ID, mobile?: boolean
   mobile ? `/chat/mobile?session=${id}` : `/chat?session=${id}`;
 
 export const imageUrl = (filename: string) => withBasePath(`/images/${filename}`);
+
+export const HUB_URL = 'https://hub.wecode.tech';

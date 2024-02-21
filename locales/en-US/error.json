@@ -94,6 +94,7 @@
         "title": "Use custom Zhipu API Key"
       }
     },
+    "buy": "🛒Purchase Service",
     "closeMessage": "Close message",
     "confirm": "Confirm and Retry",
     "oauth": {

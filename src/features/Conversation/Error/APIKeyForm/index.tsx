@@ -3,6 +3,7 @@ import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
 
+import { HUB_URL } from '@/const/url';
 import { ModelProvider } from '@/libs/agent-runtime';
 import { useChatStore } from '@/store/chat';
 
@@ -64,10 +65,10 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
         </Button>
         <Button
           onClick={() => {
-            deleteMessage(id);
+            window.open(HUB_URL, '_blank');
           }}
         >
-          {t('unlock.closeMessage')}
+          {t('unlock.buy')}
         </Button>
       </Flexbox>
     </Center>
