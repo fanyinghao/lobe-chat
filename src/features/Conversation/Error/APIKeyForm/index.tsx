@@ -7,6 +7,7 @@ import { HUB_URL } from '@/const/url';
 import { ModelProvider } from '@/libs/agent-runtime';
 import { useChatStore } from '@/store/chat';
 
+import AnthropicForm from './Anthropic';
 import BedrockForm from './Bedrock';
 import GoogleForm from './Google';
 import MoonshotForm from './Moonshot';
@@ -44,6 +45,10 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
 
       case ModelProvider.Perplexity: {
         return <PerplexityForm />;
+      }
+
+      case ModelProvider.Anthropic: {
+        return <AnthropicForm />;
       }
 
       default:
