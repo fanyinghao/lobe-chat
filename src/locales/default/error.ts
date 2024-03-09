@@ -132,7 +132,7 @@ export default {
         title: '使用自定义 Zhipu API Key',
       },
     },
-    buy: '🛒购买服务',
+    buy: '免费试用',
     closeMessage: '关闭提示',
     confirm: '确认并重试',
     oauth: {
