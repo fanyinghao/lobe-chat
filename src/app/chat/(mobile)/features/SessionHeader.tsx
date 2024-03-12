@@ -1,12 +1,12 @@
-import { ActionIcon, Avatar, Logo, MobileNavBar } from '@lobehub/ui';
+import { ActionIcon, Logo, MobileNavBar } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { MessageSquarePlus } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import { memo } from 'react';
 
 import { MOBILE_HEADER_ICON_SIZE } from '@/const/layoutTokens';
-import { useGlobalStore } from '@/store/global';
-import { commonSelectors } from '@/store/global/selectors';
+// import { useGlobalStore } from '@/store/global';
+// import { commonSelectors } from '@/store/global/selectors';
 import { useSessionStore } from '@/store/session';
 
 export const useStyles = createStyles(({ css, token }) => ({
@@ -21,20 +21,20 @@ export const useStyles = createStyles(({ css, token }) => ({
 
 const Header = memo(() => {
   const [createSession] = useSessionStore((s) => [s.createSession]);
-  const router = useRouter();
-  const avatar = useGlobalStore(commonSelectors.userAvatar);
+  // const router = useRouter();
+  // const avatar = useGlobalStore(commonSelectors.userAvatar);
   return (
     <MobileNavBar
       center={<Logo extra={<span>Wecode Chat</span>} type={'high-contrast'} />}
-      left={
-        <div onClick={() => router.push('/settings')} style={{ marginLeft: 8 }}>
-          {avatar ? (
-            <Avatar avatar={avatar} size={28} />
-          ) : (
-            <Logo extra={<span>Wecode Chat</span>} size={28} type={'high-contrast'} />
-          )}
-        </div>
-      }
+      // left={
+      //   <div onClick={() => router.push('/settings')} style={{ marginLeft: 8 }}>
+      //     {avatar ? (
+      //       <Avatar avatar={avatar} size={28} />
+      //     ) : (
+      //       <Logo size={28} />
+      //     )}
+      //   </div>
+      // }
       right={
         <ActionIcon
           icon={MessageSquarePlus}
