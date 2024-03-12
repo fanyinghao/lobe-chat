@@ -1,11 +1,12 @@
 import { Icon, MobileTabBar, type MobileTabBarProps } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
-import { Bot, MessageSquare, User } from 'lucide-react';
+import { BadgeJapaneseYen, Bot, MessageSquare, User } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { rgba } from 'polished';
 import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { HUB_URL } from '@/const/url';
 import { SidebarTabKey } from '@/store/global/initialState';
 
 const useStyles = createStyles(({ css, token }) => ({
@@ -44,6 +45,16 @@ export default memo<Props>(({ className, tabBarKey }) => {
           router.push('/market');
         },
         title: t('tab.market'),
+      },
+      {
+        icon: (active) => (
+          <Icon className={active ? styles.active : undefined} icon={BadgeJapaneseYen} />
+        ),
+        key: SidebarTabKey.Hub,
+        onClick: () => {
+          router.push(HUB_URL);
+        },
+        title: t('tab.charge'),
       },
       {
         icon: (active) => <Icon className={active ? styles.active : undefined} icon={User} />,

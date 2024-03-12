@@ -1,9 +1,10 @@
 import { ActionIcon } from '@lobehub/ui';
-import { Compass, MessageSquare } from 'lucide-react';
+import { BadgeJapaneseYen, Compass, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { HUB_URL } from '@/const/url';
 import { GlobalStore, useGlobalStore } from '@/store/global';
 import { SidebarTabKey } from '@/store/global/initialState';
 import { useSessionStore } from '@/store/session';
@@ -41,6 +42,15 @@ const TopActions = memo<TopActionProps>(({ tab }) => {
           placement={'right'}
           size="large"
           title={t('tab.market')}
+        />
+      </Link>
+      <Link aria-label={'Hub'} href={HUB_URL}>
+        <ActionIcon
+          active={tab === SidebarTabKey.Hub}
+          icon={BadgeJapaneseYen}
+          placement={'right'}
+          size="large"
+          title={'Wecode Hub'}
         />
       </Link>
     </>

@@ -127,6 +127,7 @@ export default {
   share: '分享',
   stop: '停止',
   tab: {
+    charge: '充值',
     chat: '会话',
     market: '发现',
     setting: '设置',
