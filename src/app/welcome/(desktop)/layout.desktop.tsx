@@ -19,7 +19,12 @@ const Desktop = memo<PropsWithChildren>(({ children }) => {
         horizontal
         style={{ position: 'relative' }}
       >
-        <Logo className={styles.logo} size={36} type={'text'} />
+        <Logo
+          className={styles.logo}
+          extra={<span>Wecode Chat</span>}
+          size={36}
+          type={'high-contrast'}
+        />
         <Flexbox className={styles.view} flex={1}>
           {children}
         </Flexbox>

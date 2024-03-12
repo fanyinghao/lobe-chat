@@ -25,10 +25,14 @@ const Header = memo(() => {
   const avatar = useGlobalStore(commonSelectors.userAvatar);
   return (
     <MobileNavBar
-      center={<Logo type={'text'} />}
+      center={<Logo extra={<span>Wecode Chat</span>} type={'high-contrast'} />}
       left={
         <div onClick={() => router.push('/settings')} style={{ marginLeft: 8 }}>
-          {avatar ? <Avatar avatar={avatar} size={28} /> : <Logo size={28} />}
+          {avatar ? (
+            <Avatar avatar={avatar} size={28} />
+          ) : (
+            <Logo extra={<span>Wecode Chat</span>} size={28} type={'high-contrast'} />
+          )}
         </div>
       }
       right={
