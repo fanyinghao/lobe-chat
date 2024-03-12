@@ -39,4 +39,4 @@ export const SESSION_CHAT_URL = (id: string = INBOX_SESSION_ID, mobile?: boolean
 
 export const imageUrl = (filename: string) => withBasePath(`/images/${filename}`);
 
-export const HUB_URL = 'https://hub.wecode.tech';
+export const HUB_URL = 'https://hub.wecode.net.cn';
