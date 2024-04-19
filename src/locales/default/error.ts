@@ -84,15 +84,21 @@ export default {
 
     InvalidGroqAPIKey: 'Groq API Key 不正确或为空，请检查 Groq API Key 后重试',
     GroqBizError: '请求 Groq 服务出错，请根据以下信息排查或重试',
-    
+
     InvalidOpenRouterAPIKey: 'OpenRouter API Key 不正确或为空，请检查 OpenRouter API Key 后重试',
     OpenRouterBizError: '请求 OpenRouter AI 服务出错，请根据以下信息排查或重试',
+
+    InvalidTogetherAIAPIKey: 'TogetherAI API Key 不正确或为空，请检查 TogetherAI API Key 后重试',
+    TogetherAIBizError: '请求 TogetherAI AI 服务出错，请根据以下信息排查或重试',
+
+    ZeroOneBizError: '请求零一万物服务出错，请根据以下信息排查或重试',
+    InvalidZeroOneAPIKey: '零一万物 API Key 不正确或为空，请检查零一万物 API Key 后重试',
 
     InvalidOllamaArgs: 'Ollama 配置不正确，请检查 Ollama 配置后重试',
     OllamaBizError: '请求 Ollama 服务出错，请根据以下信息排查或重试',
     OllamaServiceUnavailable: '未检测到 Ollama 服务，请检查是否正常启动',
 
-    AgentRuntimeError: 'Lobe 语言模型运行时执行出错，请根据以下信息排查或重试',
+    AgentRuntimeError: 'Lobe AI Runtime 执行出错，请根据以下信息排查或重试',
     /* eslint-enable */
   },
   stt: {
@@ -102,6 +108,7 @@ export default {
     responseError: '服务请求失败，请检查配置或重试',
   },
   unlock: {
+    addProxyUrl: '添加 OpenAI 代理地址（可选）',
     apikey: {
       Anthropic: {
         description: '输入你的 Anthropic API Key 即可开始会话。应用不会记录你的 API Key',

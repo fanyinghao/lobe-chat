@@ -6,17 +6,15 @@ import { memo, useEffect } from 'react';
 import { messageService } from '@/services/message';
 import { sessionService } from '@/services/session';
 import { useGlobalStore } from '@/store/global';
-import { useSessionStore } from '@/store/session';
 
 const checkHasConversation = async () => {
   const hasMessages = await messageService.hasMessages();
-  const hasAgents = await sessionService.hasSessions();
-  return hasMessages || hasAgents;
+  const hasAgents = await sessionService.countSessions();
+  return hasMessages || hasAgents === 0;
 };
 
 const Redirect = memo(() => {
   const router = useRouter();
-  const [switchSession] = useSessionStore((s) => [s.switchSession]);
 
   // get settings str from query
   const searchParams = useSearchParams();
@@ -27,8 +25,6 @@ const Redirect = memo(() => {
     checkHasConversation().then((hasData) => {
       if (hasData) {
         router.replace('/chat');
-
-        switchSession();
       } else {
         router.replace('/welcome');
       }
@@ -39,14 +35,9 @@ const Redirect = memo(() => {
     if (settings) {
       try {
         const json = JSON.parse(settings);
-        const { openAI } = json as {
-          openAI: {
-            OPENAI_API_KEY?: string;
-            endpoint?: string;
-          };
-        };
+        const { openAI } = json;
         setTimeout(() => {
-          if (openAI) setConfig('openAI', openAI);
+          if (openAI) setConfig('openai', openAI);
         }, 5000);
       } catch (e) {
         console.error(e);
