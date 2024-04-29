@@ -5,7 +5,7 @@ import { memo, useEffect } from 'react';
 
 import { messageService } from '@/services/message';
 import { sessionService } from '@/services/session';
-import { useGlobalStore } from '@/store/global';
+import { useUserStore } from '@/store/user';
 
 const checkHasConversation = async () => {
   const hasMessages = await messageService.hasMessages();
@@ -19,7 +19,7 @@ const Redirect = memo(() => {
   // get settings str from query
   const searchParams = useSearchParams();
   const settings = searchParams.get('settings');
-  const [setConfig] = useGlobalStore((s) => [s.setModelProviderConfig]);
+  const [setConfig] = useUserStore((s) => [s.setModelProviderConfig]);
 
   useEffect(() => {
     checkHasConversation().then((hasData) => {
