@@ -12,8 +12,8 @@ import {
   LLMProviderModelListKey,
 } from '@/app/settings/llm/const';
 import { FORM_STYLE } from '@/const/layoutTokens';
-import { useGlobalStore } from '@/store/global';
-import { modelConfigSelectors } from '@/store/global/selectors';
+import { useUserStore } from '@/store/user';
+import { modelConfigSelectors } from '@/store/user/selectors';
 import { GlobalLLMProviderKey } from '@/types/settings';
 
 import Checker from '../Checker';
@@ -32,6 +32,7 @@ interface ProviderConfigProps {
   };
   provider: GlobalLLMProviderKey;
   showApiKey?: boolean;
+  showBrowserRequest?: boolean;
   showEndpoint?: boolean;
   title: ReactNode;
 }
@@ -47,6 +48,7 @@ const ProviderConfig = memo<ProviderConfigProps>(
     title,
     checkerItem,
     modelList,
+    showBrowserRequest,
   }) => {
     const { t } = useTranslation('setting');
     const { t: modelT } = useTranslation('modelProvider');
@@ -57,7 +59,7 @@ const ProviderConfig = memo<ProviderConfigProps>(
       enabled,
       isFetchOnClient,
       isProviderEndpointNotEmpty,
-    ] = useGlobalStore((s) => [
+    ] = useUserStore((s) => [
       s.toggleProviderEnabled,
       s.setSettings,
       modelConfigSelectors.isProviderEnabled(provider)(s),
@@ -93,6 +95,19 @@ const ProviderConfig = memo<ProviderConfigProps>(
         label: modelT(`${provider}.endpoint.title` as any),
         name: [LLMProviderConfigKey, provider, LLMProviderBaseUrlKey],
       },
+      (showBrowserRequest || (showEndpoint && isProviderEndpointNotEmpty)) && {
+        children: (
+          <Switch
+            onChange={(enabled) => {
+              setSettings({ [LLMProviderConfigKey]: { [provider]: { fetchOnClient: enabled } } });
+            }}
+            value={isFetchOnClient}
+          />
+        ),
+        desc: t('llm.fetchOnClient.desc'),
+        label: t('llm.fetchOnClient.title'),
+        minWidth: undefined,
+      },
       {
         children: (
           <ProviderModelListSelect
@@ -107,20 +122,6 @@ const ProviderConfig = memo<ProviderConfigProps>(
         label: t('llm.modelList.title'),
         name: [LLMProviderConfigKey, provider, LLMProviderModelListKey],
       },
-      showEndpoint &&
-        isProviderEndpointNotEmpty && {
-          children: (
-            <Switch
-              onChange={(enabled) => {
-                setSettings({ [LLMProviderConfigKey]: { [provider]: { fetchOnClient: enabled } } });
-              }}
-              value={isFetchOnClient}
-            />
-          ),
-          desc: t('llm.fetchOnClient.desc'),
-          label: t('llm.fetchOnClient.title'),
-          minWidth: undefined,
-        },
       checkerItem ?? {
         children: <Checker model={checkModel!} provider={provider} />,
         desc: t('llm.checker.desc'),

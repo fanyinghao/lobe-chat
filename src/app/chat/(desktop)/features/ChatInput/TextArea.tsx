@@ -6,8 +6,8 @@ import { useTranslation } from 'react-i18next';
 
 import { useSendMessage } from '@/features/ChatInput/useSend';
 import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
-import { preferenceSelectors } from '@/store/global/selectors';
+import { useUserStore } from '@/store/user';
+import { preferenceSelectors } from '@/store/user/selectors';
 import { isCommandPressed } from '@/utils/keyboard';
 
 import { useAutoFocus } from './useAutoFocus';
@@ -47,7 +47,7 @@ const InputArea = memo<InputAreaProps>(({ setExpand }) => {
     s.updateInputMessage,
   ]);
 
-  const useCmdEnterToSend = useGlobalStore(preferenceSelectors.useCmdEnterToSend);
+  const useCmdEnterToSend = useUserStore(preferenceSelectors.useCmdEnterToSend);
 
   const sendMessage = useSendMessage();
 
@@ -88,7 +88,7 @@ const InputArea = memo<InputAreaProps>(({ setExpand }) => {
           isChineseInput.current = true;
         }}
         onPressEnter={(e) => {
-          if (loading || e.shiftKey || isChineseInput.current) return;
+          if (loading || e.altKey || e.shiftKey || isChineseInput.current) return;
 
           // eslint-disable-next-line unicorn/consistent-function-scoping
           const send = () => {

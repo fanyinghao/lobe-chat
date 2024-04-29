@@ -5,12 +5,12 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { HUB_URL } from '@/const/url';
-import { GlobalStore, useGlobalStore } from '@/store/global';
+import { useGlobalStore } from '@/store/global';
 import { SidebarTabKey } from '@/store/global/initialState';
 import { useSessionStore } from '@/store/session';
 
 export interface TopActionProps {
-  tab?: GlobalStore['sidebarKey'];
+  tab?: SidebarTabKey;
 }
 
 const TopActions = memo<TopActionProps>(({ tab }) => {

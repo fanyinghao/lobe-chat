@@ -16,7 +16,7 @@ const Footer = memo(() => {
   return (
     <Flexbox align={'center'} horizontal justify={'space-between'} style={{ padding: 16 }}>
       <span style={{ color: theme.colorTextDescription }}>
-        ©{new Date().getFullYear()} Wecode Tech
+        © 2023 - {new Date().getFullYear()} Wecode Tech, LLC
       </span>
       <Flexbox horizontal>
         <ActionIcon
