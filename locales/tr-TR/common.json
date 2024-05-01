@@ -4,6 +4,7 @@
   "appInitializing": "LobeChat başlatılıyor, lütfen bekleyin...",
   "autoGenerate": "Otomatik Oluştur",
   "autoGenerateTooltip": "Auto-generate agent description based on prompts",
+  "blog": "Ürün Blogu",
   "cancel": "İptal",
   "changelog": "Changelog",
   "close": "Kapat",
@@ -26,6 +27,7 @@
     "globalSetting": "Ayarları Dışa Aktar"
   },
   "feedback": "Feedback",
+  "follow": "Bizi {{name}} üzerinde takip edin",
   "historyRange": "Geçmiş Aralığı",
   "import": "İçe Aktar",
   "importModal": {
@@ -88,10 +90,12 @@
   "layoutInitializing": "Başlatılıyor...",
   "noDescription": "Açıklama yok",
   "oauth": "SSO Girişi",
+  "officialSite": "Resmi Site",
   "ok": "Tamam",
   "password": "Password",
   "pin": "Pin",
   "pinOff": "Unpin",
+  "privacy": "Gizlilik Politikası",
   "regenerate": "Tekrarla",
   "rename": "Yeniden İsimlendir",
   "reset": "Reset",
@@ -136,6 +140,7 @@
   "tab": {
     "chat": "Chat",
     "market": "Keşfet",
+    "me": "我",
     "setting": "Ayarlar"
   },
   "telemetry": {
@@ -146,10 +151,24 @@
     "title": "LobeChat'i Geliştirmemize Yardımcı Olun"
   },
   "temp": "Geçici",
+  "terms": "Hizmet Koşulları",
   "updateAgent": "Asistan Bilgilerini Güncelle",
   "upgradeVersion": {
     "action": "Güncelle",
     "hasNew": "Yeni güncelleme mevcut",
     "newVersion": "Yeni sürüm mevcut: {{version}}"
+  },
+  "userPanel": {
+    "billing": "Fatura Yönetimi",
+    "discord": "Topluluk Destek",
+    "docs": "Belgeler",
+    "email": "E-posta Destek",
+    "feedback": "Geribildirim ve Öneriler",
+    "help": "Yardım Merkezi",
+    "plans": "Abonelik Planları",
+    "profile": "Hesap Yönetimi",
+    "setting": "Uygulama Ayarları",
+    "usages": "Kullanım İstatistikleri",
+    "warn": "Bu giriş yakında kaldırılacak, ileride bu menüyü sol üst köşedeki profil resminizden açabilirsiniz"
   }
 }

@@ -7,6 +7,7 @@ export enum SidebarTabKey {
   Chat = 'chat',
   Hub = 'hub',
   Market = 'market',
+  Me = 'me',
   Setting = 'settings',
 }
 
