@@ -134,6 +134,7 @@ export default {
     charge: '充值',
     chat: '会话',
     market: '发现',
+    me: '我',
     setting: '设置',
   },
   telemetry: {
