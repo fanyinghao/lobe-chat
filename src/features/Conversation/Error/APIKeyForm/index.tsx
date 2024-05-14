@@ -44,6 +44,10 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
         return 'gsk_*****************************';
       }
 
+      case ModelProvider.DeepSeek: {
+        return 'sk_******************************';
+      }
+
       default: {
         return '*********************************';
       }

@@ -2,6 +2,7 @@ import {
   Anthropic,
   Azure,
   Bedrock,
+  DeepSeek,
   Google,
   Groq,
   Minimax,
@@ -32,6 +33,10 @@ const ModelProviderIcon = memo<ModelProviderIconProps>(({ provider }) => {
 
     case ModelProvider.Bedrock: {
       return <Bedrock size={20} />;
+    }
+
+    case ModelProvider.DeepSeek: {
+      return <DeepSeek size={20} />;
     }
 
     case ModelProvider.Google: {
