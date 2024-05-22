@@ -6,6 +6,7 @@ import { memo, useEffect } from 'react';
 import { messageService } from '@/services/message';
 import { sessionService } from '@/services/session';
 import { useUserStore } from '@/store/user';
+import { authSelectors } from '@/store/user/selectors';
 
 const checkHasConversation = async () => {
   const hasMessages = await messageService.hasMessages();
@@ -20,8 +21,14 @@ const Redirect = memo(() => {
   const searchParams = useSearchParams();
   const settings = searchParams.get('settings');
   const [setConfig] = useUserStore((s) => [s.setModelProviderConfig]);
+  const isLogin = useUserStore(authSelectors.isLogin);
 
   useEffect(() => {
+    if (!isLogin) {
+      router.replace('/welcome');
+      return;
+    }
+
     checkHasConversation().then((hasData) => {
       if (hasData) {
         router.replace('/chat');
