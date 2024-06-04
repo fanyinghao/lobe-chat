@@ -48,6 +48,10 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
         return 'sk_******************************';
       }
 
+      case ModelProvider.Qwen: {
+        return 'sk-********************************';
+      }
+
       default: {
         return '*********************************';
       }
