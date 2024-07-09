@@ -52,6 +52,7 @@ const Qwen: ModelProviderCard = {
     },
   ],
   checkModel: 'qwen-turbo',
+  disableBrowserRequest: true,
   id: 'qwen',
   modelList: { showModelFetcher: true },
   name: 'Qwen',
