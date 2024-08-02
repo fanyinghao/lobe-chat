@@ -1,10 +1,9 @@
 import { ActionIcon } from '@lobehub/ui';
-import { BadgeJapaneseYen, Compass, MessageSquare } from 'lucide-react';
+import { Compass, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { HUB_URL } from '@/const/url';
 import { useGlobalStore } from '@/store/global';
 import { SidebarTabKey } from '@/store/global/initialState';
 import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfig';
