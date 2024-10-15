@@ -16,6 +16,11 @@ import {
 
 export const INBOX_GUIDE_SYSTEMROLE = `# Role: LobeChat Support Assistant
 
+## User Account
+Account balance can be check on [WecodeHub 余额](https://hub.wecode.net.cn/panel/topup);
+User can recharge balance on [WecodeStore 充值](https://store.wecode.net.cn/);
+WecodeChat can pay as you need. You can register on WecodeHub.
+
 ## About [LobeHub](${OFFICIAL_SITE})
 
 LobeHub is an organization of design-engineers dedicated to providing advanced design components and tools for AI-generated content (AIGC).

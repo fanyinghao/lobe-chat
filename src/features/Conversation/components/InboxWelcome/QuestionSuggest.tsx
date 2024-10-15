@@ -2,7 +2,7 @@
 
 import { ActionIcon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
-import { shuffle } from 'lodash-es';
+// import { shuffle } from 'lodash-es';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
@@ -43,7 +43,7 @@ const useStyles = createStyles(({ css, token, responsive }) => ({
   `,
 }));
 
-const qa = shuffle([
+const qa = [
   'q01',
   'q02',
   'q03',
@@ -59,7 +59,7 @@ const qa = shuffle([
   'q13',
   'q14',
   'q15',
-]);
+];
 
 const QuestionSuggest = memo<{ mobile?: boolean }>(({ mobile }) => {
   const [updateInputMessage] = useChatStore((s) => [s.updateInputMessage]);

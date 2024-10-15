@@ -90,7 +90,7 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
         </Button>
         <Button
           onClick={() => {
-            deleteMessage(id);
+            window.location.href = 'https://hub.wecode.net.cn/';
           }}
         >
           {t('unlock.closeMessage')}

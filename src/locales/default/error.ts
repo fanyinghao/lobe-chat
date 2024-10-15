@@ -126,7 +126,7 @@ export default {
       description: '输入你的 {{name}} API Key 即可开始会话',
       title: '使用自定义 {{name}} API Key',
     },
-    closeMessage: '关闭提示',
+    closeMessage: '免费试用',
     confirm: '确认并重试',
     oauth: {
       description: '管理员已开启统一登录认证，点击下方按钮登录，即可解锁应用',

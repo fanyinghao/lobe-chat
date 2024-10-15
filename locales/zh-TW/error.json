@@ -99,7 +99,7 @@
       "description": "輸入您的 {{name}} API 金鑰即可開始會話",
       "title": "使用自定義 {{name}} API 金鑰"
     },
-    "closeMessage": "關閉提示",
+    "closeMessage": "🔥免費試用",
     "confirm": "確認並重試",
     "oauth": {
       "description": "管理員已開啟統一登錄認證，點擊下方按鈕登錄，即可解鎖應用",

@@ -99,7 +99,7 @@
       "description": "Enter your {{name}} API Key to start the session",
       "title": "Use custom {{name}} API Key"
     },
-    "closeMessage": "Close message",
+    "closeMessage": "🔥Free Trial",
     "confirm": "Confirm and Retry",
     "oauth": {
       "description": "The administrator has enabled unified login authentication. Click the button below to log in and unlock the application.",
