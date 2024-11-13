@@ -8,3 +8,9 @@ export const BRANDING_NAME = 'WecodeChat';
 export const BRANDING_LOGO_URL = '';
 
 export const ORG_NAME = 'Wecode';
+
+export const BRANDING_URL = {
+  help: undefined,
+  privacy: undefined,
+  terms: undefined,
+};
