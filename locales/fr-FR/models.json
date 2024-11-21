@@ -30,7 +30,7 @@
   "@hf/mistral/mistral-7b-instruct-v0.2": {},
   "@hf/nexusflow/starling-lm-7b-beta": {},
   "@hf/nousresearch/hermes-2-pro-mistral-7b": {},
-  "@hf/thebloke/deepseek-coder-6.7b-instruct": {},
+  "@hf/thebloke/deepseek-coder-6.7b-instruct-awq": {},
   "@hf/thebloke/neural-chat-7b-v3-1-awq": {},
   "@hf/thebloke/openhermes-2.5-mistral-7b-awq": {},
   "@hf/thebloke/zephyr-7b-beta-awq": {},
@@ -460,9 +460,6 @@
   "gemini-1.5-flash-8b-exp-0924": {
     "description": "Gemini 1.5 Flash 8B 0924 est le dernier modèle expérimental, offrant des améliorations significatives en termes de performance dans les cas d'utilisation textuels et multimodaux."
   },
-  "gemini-1.5-flash-exp-0827": {
-    "description": "Gemini 1.5 Flash 0827 offre des capacités de traitement multimodal optimisées, adaptées à divers scénarios de tâches complexes."
-  },
   "gemini-1.5-flash-latest": {
     "description": "Gemini 1.5 Flash est le dernier modèle d'IA multimodal de Google, doté de capacités de traitement rapide, prenant en charge les entrées de texte, d'images et de vidéos, adapté à une large gamme de tâches pour une extension efficace."
   },
@@ -472,14 +469,11 @@
   "gemini-1.5-pro-002": {
     "description": "Gemini 1.5 Pro 002 est le dernier modèle prêt pour la production, offrant une qualité de sortie supérieure, avec des améliorations notables dans les domaines des mathématiques, des contextes longs et des tâches visuelles."
   },
-  "gemini-1.5-pro-exp-0801": {
-    "description": "Gemini 1.5 Pro 0801 offre d'excellentes capacités de traitement multimodal, apportant une plus grande flexibilité au développement d'applications."
-  },
-  "gemini-1.5-pro-exp-0827": {
-    "description": "Gemini 1.5 Pro 0827 combine les dernières technologies d'optimisation, offrant une capacité de traitement de données multimodales plus efficace."
-  },
   "gemini-1.5-pro-latest": {
     "description": "Gemini 1.5 Pro prend en charge jusqu'à 2 millions de tokens, ce qui en fait un choix idéal pour un modèle multimodal de taille moyenne, adapté à un soutien polyvalent pour des tâches complexes."
+  },
+  "gemini-exp-1114": {
+    "description": "Gemini Exp 1114 est le dernier modèle d'IA multimodale expérimental de Google, offrant une capacité de traitement rapide, prenant en charge les entrées de texte, d'image et de vidéo, et permettant une extension efficace pour une variété de tâches."
   },
   "gemma-7b-it": {
     "description": "Gemma 7B est adapté au traitement de tâches de taille moyenne, alliant coût et efficacité."
@@ -616,6 +610,9 @@
   "grok-beta": {
     "description": "Offre des performances comparables à Grok 2, mais avec une efficacité, une vitesse et des fonctionnalités supérieures."
   },
+  "grok-vision-beta": {
+    "description": "Le dernier modèle de compréhension d'image, capable de traiter une variété d'informations visuelles, y compris des documents, des graphiques, des captures d'écran et des photos."
+  },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B est un modèle linguistique combinant créativité et intelligence, intégrant plusieurs modèles de pointe."
   },
@@ -651,6 +648,12 @@
   },
   "internlm/internlm2_5-7b-chat": {
     "description": "InternLM2.5 fournit des solutions de dialogue intelligent dans divers scénarios."
+  },
+  "internlm2-pro-chat": {
+    "description": "Une ancienne version du modèle que nous maintenons encore, avec des options de paramètres de 7B et 20B disponibles."
+  },
+  "internlm2.5-latest": {
+    "description": "Notre dernière série de modèles, offrant des performances d'inférence exceptionnelles, prenant en charge une longueur de contexte de 1M et des capacités améliorées de suivi des instructions et d'appel d'outils."
   },
   "jamba-1.5-large": {},
   "jamba-1.5-mini": {},
@@ -974,6 +977,9 @@
   },
   "pixtral-12b-2409": {
     "description": "Le modèle Pixtral montre de puissantes capacités dans des tâches telles que la compréhension des graphiques et des images, le questionnement de documents, le raisonnement multimodal et le respect des instructions, capable d'ingérer des images à résolution naturelle et à rapport d'aspect, tout en traitant un nombre quelconque d'images dans une fenêtre de contexte longue allant jusqu'à 128K tokens."
+  },
+  "pixtral-large-latest": {
+    "description": "Pixtral Large est un modèle multimodal open source avec 124 milliards de paramètres, basé sur Mistral Large 2. C'est notre deuxième modèle de la famille multimodale, démontrant des capacités de compréhension d'image à la pointe de la technologie."
   },
   "pro-128k": {
     "description": "Spark Pro 128K est doté d'une capacité de traitement de contexte très étendue, capable de gérer jusqu'à 128K d'informations contextuelles, particulièrement adapté pour l'analyse complète et le traitement des relations logiques à long terme dans des contenus longs, offrant une logique fluide et cohérente ainsi qu'un soutien varié pour les références dans des communications textuelles complexes."

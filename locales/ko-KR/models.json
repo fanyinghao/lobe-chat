@@ -460,9 +460,6 @@
   "gemini-1.5-flash-8b-exp-0924": {
     "description": "Gemini 1.5 Flash 8B 0924는 최신 실험 모델로, 텍스트 및 다중 모달 사용 사례에서 상당한 성능 향상을 보여줍니다."
   },
-  "gemini-1.5-flash-exp-0827": {
-    "description": "Gemini 1.5 Flash 0827은 최적화된 다중 모달 처리 능력을 제공하며, 다양한 복잡한 작업 시나리오에 적합합니다."
-  },
   "gemini-1.5-flash-latest": {
     "description": "Gemini 1.5 Flash는 Google의 최신 다중 모달 AI 모델로, 빠른 처리 능력을 갖추고 있으며 텍스트, 이미지 및 비디오 입력을 지원하여 다양한 작업에 효율적으로 확장할 수 있습니다."
   },
@@ -472,14 +469,11 @@
   "gemini-1.5-pro-002": {
     "description": "Gemini 1.5 Pro 002는 최신 생산 준비 모델로, 특히 수학, 긴 문맥 및 시각적 작업에서 더 높은 품질의 출력을 제공합니다."
   },
-  "gemini-1.5-pro-exp-0801": {
-    "description": "Gemini 1.5 Pro 0801은 뛰어난 다중 모달 처리 능력을 제공하여 응용 프로그램 개발에 더 큰 유연성을 제공합니다."
-  },
-  "gemini-1.5-pro-exp-0827": {
-    "description": "Gemini 1.5 Pro 0827은 최신 최적화 기술을 결합하여 더 효율적인 다중 모달 데이터 처리 능력을 제공합니다."
-  },
   "gemini-1.5-pro-latest": {
     "description": "Gemini 1.5 Pro는 최대 200만 개의 토큰을 지원하며, 중형 다중 모달 모델의 이상적인 선택으로 복잡한 작업에 대한 다각적인 지원을 제공합니다."
+  },
+  "gemini-exp-1114": {
+    "description": "Gemini Exp 1114는 Google의 최신 실험적 다중 모달 AI 모델로, 빠른 처리 능력을 갖추고 있으며, 텍스트, 이미지 및 비디오 입력을 지원하여 다양한 작업에 효율적으로 확장할 수 있습니다."
   },
   "gemma-7b-it": {
     "description": "Gemma 7B는 중소 규모 작업 처리에 적합하며, 비용 효과성을 갖추고 있습니다."
@@ -616,6 +610,9 @@
   "grok-beta": {
     "description": "Grok 2와 유사한 성능을 가지지만, 더 높은 효율성, 속도 및 기능을 제공합니다."
   },
+  "grok-vision-beta": {
+    "description": "최신 이미지 이해 모델로, 문서, 차트, 스크린샷 및 사진 등 다양한 시각 정보를 처리할 수 있습니다."
+  },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B는 여러 최상위 모델을 통합한 창의성과 지능이 결합된 언어 모델입니다."
   },
@@ -651,6 +648,12 @@
   },
   "internlm/internlm2_5-7b-chat": {
     "description": "InternLM2.5는 다양한 시나리오에서 스마트 대화 솔루션을 제공합니다."
+  },
+  "internlm2-pro-chat": {
+    "description": "우리가 여전히 유지 관리하는 구버전 모델로, 7B 및 20B와 같은 다양한 모델 매개변수 옵션이 있습니다."
+  },
+  "internlm2.5-latest": {
+    "description": "우리가 최신으로 선보이는 모델 시리즈로, 뛰어난 추론 성능을 자랑하며 1M의 컨텍스트 길이와 더 강력한 지시 따르기 및 도구 호출 기능을 지원합니다."
   },
   "jamba-1.5-large": {},
   "jamba-1.5-mini": {},
@@ -974,6 +977,9 @@
   },
   "pixtral-12b-2409": {
     "description": "Pixtral 모델은 차트 및 이미지 이해, 문서 질문 응답, 다중 모드 추론 및 지시 준수와 같은 작업에서 강력한 능력을 발휘하며, 자연 해상도와 가로 세로 비율로 이미지를 입력할 수 있고, 최대 128K 토큰의 긴 컨텍스트 창에서 임의의 수의 이미지를 처리할 수 있습니다."
+  },
+  "pixtral-large-latest": {
+    "description": "Pixtral Large는 1240억 개의 매개변수를 가진 오픈 소스 다중 모달 모델로, Mistral Large 2를 기반으로 구축되었습니다. 이는 우리의 다중 모달 가족 중 두 번째 모델로, 최첨단 수준의 이미지 이해 능력을 보여줍니다."
   },
   "pro-128k": {
     "description": "Spark Pro 128K는 매우 큰 컨텍스트 처리 능력을 갖추고 있으며, 최대 128K의 컨텍스트 정보를 처리할 수 있습니다. 특히 전체 분석 및 장기 논리 연관 처리가 필요한 긴 문서 콘텐츠에 적합하며, 복잡한 텍스트 커뮤니케이션에서 매끄럽고 일관된 논리와 다양한 인용 지원을 제공합니다."

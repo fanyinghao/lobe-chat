@@ -460,9 +460,6 @@
   "gemini-1.5-flash-8b-exp-0924": {
     "description": "Gemini 1.5 Flash 8B 0924 is het nieuwste experimentele model, met aanzienlijke prestatieverbeteringen in tekst- en multimodale toepassingen."
   },
-  "gemini-1.5-flash-exp-0827": {
-    "description": "Gemini 1.5 Flash 0827 biedt geoptimaliseerde multimodale verwerkingscapaciteiten, geschikt voor verschillende complexe taakscenario's."
-  },
   "gemini-1.5-flash-latest": {
     "description": "Gemini 1.5 Flash is Google's nieuwste multimodale AI-model, met snelle verwerkingscapaciteiten, ondersteunt tekst-, beeld- en video-invoer, en is geschikt voor efficiënte opschaling van verschillende taken."
   },
@@ -472,14 +469,11 @@
   "gemini-1.5-pro-002": {
     "description": "Gemini 1.5 Pro 002 is het nieuwste productieklare model, dat hogere kwaliteit output biedt, met name op het gebied van wiskunde, lange contexten en visuele taken."
   },
-  "gemini-1.5-pro-exp-0801": {
-    "description": "Gemini 1.5 Pro 0801 biedt uitstekende multimodale verwerkingscapaciteiten en biedt meer flexibiliteit voor applicatieontwikkeling."
-  },
-  "gemini-1.5-pro-exp-0827": {
-    "description": "Gemini 1.5 Pro 0827 combineert de nieuwste optimalisatietechnologieën en biedt efficiëntere multimodale gegevensverwerkingscapaciteiten."
-  },
   "gemini-1.5-pro-latest": {
     "description": "Gemini 1.5 Pro ondersteunt tot 2 miljoen tokens en is de ideale keuze voor middelgrote multimodale modellen, geschikt voor veelzijdige ondersteuning van complexe taken."
+  },
+  "gemini-exp-1114": {
+    "description": "Gemini Exp 1114 is Google's nieuwste experimentele multimodale AI-model, met een snelle verwerkingscapaciteit, ondersteunt tekst-, beeld- en video-invoer, geschikt voor efficiënte schaling van diverse taken."
   },
   "gemma-7b-it": {
     "description": "Gemma 7B is geschikt voor het verwerken van middelgrote taken, met een goede kosteneffectiviteit."
@@ -616,6 +610,9 @@
   "grok-beta": {
     "description": "Biedt prestaties vergelijkbaar met Grok 2, maar met hogere efficiëntie, snelheid en functionaliteit."
   },
+  "grok-vision-beta": {
+    "description": "Het nieuwste model voor beeldbegrip, dat een breed scala aan visuele informatie kan verwerken, waaronder documenten, grafieken, screenshots en foto's."
+  },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B is een taalmodel dat creativiteit en intelligentie combineert door meerdere topmodellen te integreren."
   },
@@ -651,6 +648,12 @@
   },
   "internlm/internlm2_5-7b-chat": {
     "description": "InternLM2.5 biedt intelligente gespreksoplossingen voor meerdere scenario's."
+  },
+  "internlm2-pro-chat": {
+    "description": "Onze oudere modelversie die we nog steeds onderhouden, met opties voor 7B en 20B parameters."
+  },
+  "internlm2.5-latest": {
+    "description": "Onze nieuwste modelreeks met uitstekende redeneervaardigheden, ondersteunt een contextlengte van 1M en heeft verbeterde instructievolging en toolaanroepmogelijkheden."
   },
   "jamba-1.5-large": {},
   "jamba-1.5-mini": {},
@@ -974,6 +977,9 @@
   },
   "pixtral-12b-2409": {
     "description": "Het Pixtral model toont sterke capaciteiten in taken zoals grafiek- en beeldbegrip, documentvraag-en-antwoord, multimodale redenering en instructievolging, en kan afbeeldingen met natuurlijke resolutie en beeldverhouding verwerken, evenals een onbeperkt aantal afbeeldingen in een lange contextvenster van maximaal 128K tokens."
+  },
+  "pixtral-large-latest": {
+    "description": "Pixtral Large is een open-source multimodaal model met 124 miljard parameters, gebaseerd op Mistral Large 2. Dit is ons tweede model in de multimodale familie en toont geavanceerde beeldbegripcapaciteiten."
   },
   "pro-128k": {
     "description": "Spark Pro 128K is uitgerust met een zeer grote contextverwerkingscapaciteit, in staat om tot 128K contextinformatie te verwerken. Het is bijzonder geschikt voor lange teksten die een volledige analyse en langdurige logische verbanden vereisen, en biedt een vloeiende en consistente logica met diverse ondersteuningen voor citaten in complexe tekstcommunicatie."

@@ -460,9 +460,6 @@
   "gemini-1.5-flash-8b-exp-0924": {
     "description": "Gemini 1.5 Flash 8B 0924 là mô hình thử nghiệm mới nhất, có sự cải thiện đáng kể về hiệu suất trong các trường hợp sử dụng văn bản và đa phương thức."
   },
-  "gemini-1.5-flash-exp-0827": {
-    "description": "Gemini 1.5 Flash 0827 cung cấp khả năng xử lý đa phương thức được tối ưu hóa, phù hợp cho nhiều tình huống nhiệm vụ phức tạp."
-  },
   "gemini-1.5-flash-latest": {
     "description": "Gemini 1.5 Flash là mô hình AI đa phương thức mới nhất của Google, có khả năng xử lý nhanh, hỗ trợ đầu vào văn bản, hình ảnh và video, phù hợp cho việc mở rộng hiệu quả cho nhiều nhiệm vụ."
   },
@@ -472,14 +469,11 @@
   "gemini-1.5-pro-002": {
     "description": "Gemini 1.5 Pro 002 là mô hình sẵn sàng cho sản xuất mới nhất, cung cấp đầu ra chất lượng cao hơn, đặc biệt là trong các nhiệm vụ toán học, ngữ cảnh dài và thị giác."
   },
-  "gemini-1.5-pro-exp-0801": {
-    "description": "Gemini 1.5 Pro 0801 cung cấp khả năng xử lý đa phương thức xuất sắc, mang lại sự linh hoạt lớn hơn cho phát triển ứng dụng."
-  },
-  "gemini-1.5-pro-exp-0827": {
-    "description": "Gemini 1.5 Pro 0827 kết hợp công nghệ tối ưu hóa mới nhất, mang lại khả năng xử lý dữ liệu đa phương thức hiệu quả hơn."
-  },
   "gemini-1.5-pro-latest": {
     "description": "Gemini 1.5 Pro hỗ trợ lên đến 2 triệu tokens, là lựa chọn lý tưởng cho mô hình đa phương thức trung bình, phù hợp cho hỗ trợ đa diện cho các nhiệm vụ phức tạp."
+  },
+  "gemini-exp-1114": {
+    "description": "Gemini Exp 1114 là mô hình AI đa phương thức thử nghiệm mới nhất của Google, có khả năng xử lý nhanh, hỗ trợ đầu vào văn bản, hình ảnh và video, phù hợp với việc mở rộng hiệu quả cho nhiều nhiệm vụ."
   },
   "gemma-7b-it": {
     "description": "Gemma 7B phù hợp cho việc xử lý các nhiệm vụ quy mô vừa và nhỏ, đồng thời mang lại hiệu quả chi phí."
@@ -616,6 +610,9 @@
   "grok-beta": {
     "description": "Có hiệu suất tương đương với Grok 2, nhưng hiệu quả, tốc độ và tính năng cao hơn."
   },
+  "grok-vision-beta": {
+    "description": "Mô hình hiểu hình ảnh mới nhất, có khả năng xử lý nhiều loại thông tin hình ảnh khác nhau, bao gồm tài liệu, biểu đồ, ảnh chụp màn hình và ảnh."
+  },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B là mô hình ngôn ngữ kết hợp giữa sáng tạo và trí thông minh, kết hợp nhiều mô hình hàng đầu."
   },
@@ -651,6 +648,12 @@
   },
   "internlm/internlm2_5-7b-chat": {
     "description": "InternLM2.5 cung cấp giải pháp đối thoại thông minh cho nhiều tình huống."
+  },
+  "internlm2-pro-chat": {
+    "description": "Mô hình phiên bản cũ mà chúng tôi vẫn đang duy trì, có sẵn với nhiều tùy chọn tham số 7B và 20B."
+  },
+  "internlm2.5-latest": {
+    "description": "Dòng mô hình mới nhất của chúng tôi, có hiệu suất suy luận xuất sắc, hỗ trợ độ dài ngữ cảnh 1M và khả năng theo dõi chỉ dẫn và gọi công cụ mạnh mẽ hơn."
   },
   "jamba-1.5-large": {},
   "jamba-1.5-mini": {},
@@ -974,6 +977,9 @@
   },
   "pixtral-12b-2409": {
     "description": "Mô hình Pixtral thể hiện khả năng mạnh mẽ trong các nhiệm vụ như hiểu biểu đồ và hình ảnh, hỏi đáp tài liệu, suy luận đa phương tiện và tuân thủ hướng dẫn, có khả năng tiếp nhận hình ảnh với độ phân giải và tỷ lệ khung hình tự nhiên, cũng như xử lý bất kỳ số lượng hình ảnh nào trong cửa sổ ngữ cảnh dài lên đến 128K token."
+  },
+  "pixtral-large-latest": {
+    "description": "Pixtral Large là một mô hình đa phương thức mã nguồn mở với 1240 tỷ tham số, được xây dựng dựa trên Mistral Large 2. Đây là mô hình thứ hai trong gia đình đa phương thức của chúng tôi, thể hiện khả năng hiểu hình ảnh ở mức tiên tiến."
   },
   "pro-128k": {
     "description": "Spark Pro 128K được cấu hình với khả năng xử lý ngữ cảnh cực lớn, có thể xử lý tới 128K thông tin ngữ cảnh, đặc biệt phù hợp cho việc phân tích toàn bộ và xử lý mối liên hệ logic lâu dài trong nội dung văn bản dài, có thể cung cấp logic mạch lạc và hỗ trợ trích dẫn đa dạng trong giao tiếp văn bản phức tạp."
